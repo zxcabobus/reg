@@ -1,0 +1,52 @@
+form{
+    font-family: 'lato',sans-serif;
+    text-align: center;
+    font-size: large;
+}
+.firstName{
+    outline: none;
+    border:none;
+    border-bottom:2px solid grey;
+    height: 25px;
+}
+.lastName{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    height: 25px;
+}
+.middleName{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    height: 25px;
+}
+.age{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    height: 25px;
+}
+.mail{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    height: 25px;
+}
+.pswd{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+    height: 25px;
+}
+#button{
+    text-decoration: none;
+    margin: 4px 2px;
+    padding: 16px 32px;
+    cursor: pointer;
+    font-family: 'lato',sans-serif;
+    background-color: grey;
+    border: none;
+    color: white;
+}
+
