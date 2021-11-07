@@ -49,4 +49,6 @@ form{
     border: none;
     color: white;
 }
-
+#accept{
+    font-family: 'lato',sans-serif;
+}
