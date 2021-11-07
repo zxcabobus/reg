@@ -1,4 +1,5 @@
 function SumbitAction(form){
     var form = document.getElementById("itForm")
-    alert("Спасибо " +form.name.value +" за отправку заявки. Ожидайте" )
+    var accept = document.getElementById("accept")
+    accept.innerHTML = "Спасибо "+form.name.value+" Ожидайте."
 }
