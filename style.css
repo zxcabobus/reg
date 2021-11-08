@@ -51,3 +51,24 @@ form{
 #accept{
     font-family: 'lato',sans-serif;
 }
+.fname{
+    margin-right: 200px;
+}
+.lname{
+    margin-right: 161px;
+}
+.mname{
+    margin-right: 161px;
+}
+.date{
+    margin-right: 130px;
+}
+.email{
+    margin-right: 75px;
+}
+.pass{
+    margin-right: 174px;
+}
+.pass-repeat{
+    margin-right: 82px;
+}

@@ -8,17 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" id="itForm" onsubmit="SumbitAction()">
-        <input type="text" placeholder="Имя" class="firstName" id="name">
+    <form action="" id="itForm">
+        <label class="fname" for="firstName">Имя</label>
+        <input type="text" class="firstName" id="name">
         <br>
         <br>
-        <input type="text" placeholder="Фамилия" class="lastName" id="lastName">
+        <label class="lname" for="lastName">Фамилия</label>
+        <input type="text" class="lastName" id="lastName">
         <br>
         <br>
-        <input type="text" placeholder="Отчество" class="middleName" id="middleName">
+        <label class="mname" for="middleName">Отчество</label>
+        <input type="text" class="middleName" id="middleName">
         <br>
         <br>
-        <input type="number" placeholder="Возраст" class="age">
+        <label class="date" for="age">Дата рождения </label>
+        <input type="date" class="age">
         <br>
         <br>
         <p>Укажите пол</p>
@@ -70,16 +74,22 @@
         <input type="file">
         <br>
         <br>
-        <input type="text" placeholder="Почта" class="mail" id="mail">
+        <label class="email" for="mail">Электронная почта</label>
+        <input type="text" class="mail" id="mail">
         <br>
         <br>
-        <input type="password" placeholder="Введите пороль" class="pswd">
+        <label class="pass" for="pswd">Пароль</label>
+        <input type="password" class="pswd">
         <br>
         <br>
-        <input type="password" placeholder="Повторите пороль" class="pswd">
+        <label class="pass-repeat" for="pswd-repeat">Повторите пароль</label>
+        <input type="password" name="pswd-repeat" class="pswd">
         <br>
         <br>
-        <input type="submit" onclick="Valid()" value="Отправить" id="button">
+        <br>
+        <input type="button" onclick="Valid();SumbitAction()" value="Отправить" id="button">
+        <br>
+        <br>
         <div id="accept"></div>
     </form>
     <script type="text/javascript" src="script.js"></script>
