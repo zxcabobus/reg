@@ -8,14 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" id="itForm">
+    <form action="" id="itForm" onsubmit="SumbitAction()">
         <input type="text" placeholder="Имя" class="firstName" id="name">
         <br>
         <br>
-        <input type="text" placeholder="Фамилия" class="lastName">
+        <input type="text" placeholder="Фамилия" class="lastName" id="lastName">
         <br>
         <br>
-        <input type="text" placeholder="Отчество" class="middleName">
+        <input type="text" placeholder="Отчество" class="middleName" id="middleName">
         <br>
         <br>
         <input type="number" placeholder="Возраст" class="age">
@@ -35,37 +35,42 @@
         <br>
         <p>Хобби</p>
         <br>
-        <label><input type="checkbox" name="hobby">Вокал</label>
-        <br>
-        <label><input type="checkbox" name="hobby">Кулинария</label>
-        <br>
-        <label><input type="checkbox" name="hobby">Сёрфинг</label>
-        <br>
-        <label><input type="checkbox" name="hobby">Рисование</label>
-        <br>
-        <label><input type="checkbox" name="hobby">Робототехника</label>
-        <br>
-        <label><input type="checkbox" name="hobby">Плаванье</label>
-        <br>
-        <label><input type="checkbox" name="hobby">Компьютерные игры</label>
-        <br>
-        <label><input type="checkbox" name="hobby">Хоккей</label>
-        <br>
-        <label><input type="checkbox" name="hobby">Футбол</label>
-        <br>
-        <label><input type="checkbox" name="hobby">Танцы</label>
+        <table>
+            <td>
+                <label><input type="checkbox" name="hobby">Вокал</label>
+                <br>
+                <label><input type="checkbox" name="hobby">Кулинария</label>
+                <br>
+                <label><input type="checkbox" name="hobby">Сёрфинг</label>
+                <br>
+                <label><input type="checkbox" name="hobby">Рисование</label>
+                <br>
+                <label><input type="checkbox" name="hobby">Робототехника</label>
+            </td>
+            <td>
+                <label><input type="checkbox" name="hobby">Плаванье</label>
+                <br>
+                <label><input type="checkbox" name="hobby">Компьютерные игры</label>
+                <br>
+                <label><input type="checkbox" name="hobby">Хоккей</label>
+                <br>
+                <label><input type="checkbox" name="hobby">Футбол</label>
+                <br>
+                <label><input type="checkbox" name="hobby">Танцы</label>
+            </td>
+        </table>
         <br>
         <br>
         <p>Загрузите фото</p>
         <br>
-        <input type="file">
+        <input type="image">
         <br>
         <p>Отправте нам своё резюме</p>
         <br>
         <input type="file">
         <br>
         <br>
-        <input type="text" placeholder="Почта" class="mail">
+        <input type="text" placeholder="Почта" class="mail" id="mail">
         <br>
         <br>
         <input type="password" placeholder="Введите пороль" class="pswd">
@@ -74,7 +79,7 @@
         <input type="password" placeholder="Повторите пороль" class="pswd">
         <br>
         <br>
-        <input type="button" onclick="SumbitAction()" value="Отправить" id="button">
+        <input type="submit" onclick="Valid()" value="Отправить" id="button">
         <div id="accept"></div>
     </form>
     <script type="text/javascript" src="script.js"></script>
